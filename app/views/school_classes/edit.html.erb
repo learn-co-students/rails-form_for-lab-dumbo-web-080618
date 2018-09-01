@@ -1,0 +1,10 @@
+<h1>Update School class</h1>
+
+<%= form_for school_class_path do |f| %>
+  <%= f.label :title %>
+  <%= text_field_tag :title, params[:title], :id => 'school_class_title' %>
+
+  <%= f.label :room_number %>
+  <%= text_field_tag :room_number, params[:room_number], :id => 'school_class_room_number' %>
+  <%= f.submit 'Update School class' %>
+<% end %>
